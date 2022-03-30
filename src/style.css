@@ -23,4 +23,15 @@ body {
 span,mark{
   margin-right:5px;
 }
-
+textarea{
+  height:200px;
+  width:500px;
+}
+.word-input{
+  width:500px;
+  margin-top:5px;
+}
+.conditional-span-mark{
+  width:500px;
+  
+}

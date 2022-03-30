@@ -6,13 +6,12 @@ const Highlighter = () => {
   const [word, setWord] = useState('')
   const [checkboxValue, setCheckboxValue] = useState(false)
   
-  const handleChangeParagraph = event => {
-    
+  const handleChangeParagraph = event => {    
     setText(event.target.value);
-  };
+  }
   const handleChangeWord = event => {
     setWord(event.target.value);
-  }; 
+  }
   const handleChangeCheck=()=>{      
       setCheckboxValue(!checkboxValue);      
   }
@@ -25,6 +24,7 @@ const Highlighter = () => {
         onChange={handleChangeParagraph}
         />
       <input 
+        className='word-input'
         data-testid="search-term" 
         value={word}
         onChange={handleChangeWord}

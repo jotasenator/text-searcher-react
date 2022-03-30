@@ -21,12 +21,15 @@ const Highlighter = () => {
       <textarea 
         data-testid="source-text" 
         value={text}
+        autoFocus={true}
+        placeholder='Write or paste text'
         onChange={handleChangeParagraph}
         />
       <input 
         className='word-input'
         data-testid="search-term" 
         value={word}
+        placeholder='enter text to search for'
         onChange={handleChangeWord}
       />
       
